@@ -4,13 +4,14 @@ export const Container = styled.div`
   position: absolute;
   top: 105px;
   left: 75px;
-  background-color: #daaaff;
+  background: #DAAAFF;
   color: #fff;
   width: 154px;
   height: 77px;
   border-radius: 12px;
   text-align: left;
   padding: 18px;
+  overflow: hidden;
 
   small {
     font-size: 15px;
@@ -25,8 +26,36 @@ export const Container = styled.div`
       font-weight: 400;
     }
     img {
-        padding-left: 5px;
+      padding-left: 5px;
       height: 18px;
     }
   }
+
+  i{
+      width: 154px;
+      height: 77px;
+      position: absolute;
+      border-radius: 50px;
+
+      &.circle1{
+        left: 105px;
+        top:-25px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &.circle2{
+        left: 90px;
+        bottom:-50px;
+        background : rgba(255, 255, 255, 0.2);
+        transform: rotate(45deg);
+      }
+
+      &.circle3{
+        border:1px solid rgba(255, 255, 255, 0.4);
+        transform: rotate(-72deg);
+        top:-60px;
+        left: 50px;
+      }
+    }
+
 `;
