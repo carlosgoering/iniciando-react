@@ -9,7 +9,7 @@ const Frontend = ({ children }: FrontendProps) => {
         <Header></Header>
 
         <main>{children}</main>
-
+        
         </S.Container>;
 }
 

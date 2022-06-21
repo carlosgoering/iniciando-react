@@ -1,5 +1,8 @@
 import {createGlobalStyle} from 'styled-components'
 
+import background1 from '../assets/Background1.svg'
+import background2 from '../assets/Background2.svg'
+
 const globalStyle = createGlobalStyle`
     * {
         padding: 0;
@@ -12,6 +15,8 @@ const globalStyle = createGlobalStyle`
     }
 
     body{
+        background: url(${background2}) no-repeat 1010px,url(${background1}) no-repeat 931px;
+        background-size: cover;
         background-color: #F8FdFF;
         font-family: 'Poppins', sans-serif;
     }
